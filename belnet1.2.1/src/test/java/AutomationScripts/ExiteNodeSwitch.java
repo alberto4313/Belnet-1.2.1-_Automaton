@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 
-public class ExiteNodeSwicth extends DesiredCapabilitiesOfDevice {
+public class ExiteNodeSwitch extends DesiredCapabilitiesOfDevice {
 	int a=0;
 
 	@Test(priority=2)
