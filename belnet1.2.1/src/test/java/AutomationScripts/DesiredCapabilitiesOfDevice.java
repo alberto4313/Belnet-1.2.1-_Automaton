@@ -31,6 +31,7 @@ public class DesiredCapabilitiesOfDevice {
 			System.out.println("Message is :"+exp.getMessage());
 			exp.printStackTrace();
 		}
+	
 	}
 	@AfterTest
 	public void teardown() {}}
