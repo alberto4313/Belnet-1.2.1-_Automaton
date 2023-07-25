@@ -9,9 +9,9 @@ import io.appium.java_client.AppiumBy;
 public class ExiteNodeSwitch extends DesiredCapabilitiesOfDevice {
 	int a=0;
  @Test(priority=1)
-	public void ContributorExiteNodeSwicth() throws InterruptedException {
+	public void ContributorExiteNodeSwitch() throws InterruptedException {
     	   Thread.sleep(10000);
-    	   WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));
+    	   WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));//Remove this code if"Can't perform update Google play store pop up is not showing after application opens"
 	       se.click();	
     	   Thread.sleep(3000);
     	   for(int i=1;i<=10;i++) {
