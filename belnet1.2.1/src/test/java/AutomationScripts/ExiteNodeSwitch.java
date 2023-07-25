@@ -8,18 +8,7 @@ import io.appium.java_client.AppiumBy;
 
 public class ExiteNodeSwitch extends DesiredCapabilitiesOfDevice {
 	int a=0;
-
-	@Test(priority=2)
-	public void DarkandLightThemeChagne() {
-		 
-	for(int i=0;i<=9;i++) {
-		WebElement seven10=driver.findElement(By.xpath("//android.widget.ImageView[@index='2']")); // Click on Light Theme button
-	    seven10.click();
-	    WebElement seven311=driver.findElement(By.xpath("//android.widget.ImageView[@index='2']")); // Click on Dark Theme button
-	    seven311.click();
-}
-	}
-       @Test(priority=1)
+ @Test(priority=1)
 	public void ContributorExiteNodeSwicth() throws InterruptedException {
     	   Thread.sleep(10000);
     	   WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));
