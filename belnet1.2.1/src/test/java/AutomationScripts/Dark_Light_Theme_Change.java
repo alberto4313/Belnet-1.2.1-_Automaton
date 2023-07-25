@@ -10,7 +10,7 @@ public class Dark_Light_Theme_Change extends DesiredCapabilitiesOfDevice{
 	@Test
 	public void DarkandLightThemeChagne() throws InterruptedException {
 		 Thread.sleep(3000);
-		WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));
+		WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));//Remove this code if"Can't perform update Google play store pop up is not showing after application opens"
 	       se.click();	
  	   Thread.sleep(3000);
 	for(int i=0;i<=9;i++) {
