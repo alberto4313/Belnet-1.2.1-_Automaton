@@ -8,7 +8,7 @@ import io.appium.java_client.AppiumBy;
 public class NodeSwitch extends DesiredCapabilitiesOfDevice{
 	public void Switch() throws InterruptedException {
 		
-		WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));
+		WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));//Remove this code if"Can't perform update Google play store pop up is not showing after application opens" 
 	       se.click();	
  	   Thread.sleep(3000);
  	   
@@ -45,6 +45,7 @@ public class NodeSwitch extends DesiredCapabilitiesOfDevice{
         Thread.sleep(3000);
         WebElement e75=driver.findElement(By.xpath("//android.view.View[@content-desc=\"Beldex Official\r\n"
         		+ "3 Nodes\"]"));
+        e75.click();
         Thread.sleep(3000);
         WebElement e74=driver.findElement(AppiumBy.accessibilityId("snoq7arak4d5mkpfsg69saj7bp1ikxyzqjkhzb96keywn6iyhc5y.bdx\r\n"
         		+ "France"));
