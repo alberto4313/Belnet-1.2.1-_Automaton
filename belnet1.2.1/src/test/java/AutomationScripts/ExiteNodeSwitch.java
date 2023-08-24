@@ -11,8 +11,8 @@ public class ExiteNodeSwitch extends DesiredCapabilitiesOfDevice {
  @Test(priority=1)
 	public void ContributorExiteNodeSwitch() throws InterruptedException {
     	   Thread.sleep(10000);
-    	   WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));//Remove this code if"Can't perform update Google play store pop up is not showing after application opens"
-	       se.click();	
+    	   try{WebElement se=driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"CLOSE\"]"));//Remove this code if"Can't perform update Google play store pop up is not showing after application opens"
+	       se.click();}catch(Exception e){	
     	   Thread.sleep(3000);
     	   for(int i=1;i<=10;i++) {
     	   WebElement e9=driver.findElement(By.xpath("//android.widget.ImageView[@index=\"8\"]"));
@@ -57,7 +57,7 @@ public class ExiteNodeSwitch extends DesiredCapabilitiesOfDevice {
  WebElement seven10=driver.findElement(new AppiumBy.ByAndroidUIAutomator(scrollElement2));
  Thread.sleep(5000);
  
-       }}
+       }}}
 
 
 
